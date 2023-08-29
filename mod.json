@@ -1,0 +1,15 @@
+{
+	"geode": "1.2.0",
+	"version": "v1.0.0",
+	"id": "tqmatvey.essentials",
+	"name": "Essentials",
+	"developer": "TQMatvey",
+	"description": "",
+	"settings": {
+        "no-transitions": {
+            "name": "Disable Transitions",
+            "type": "bool",
+            "default": false
+    	}
+	}
+}
