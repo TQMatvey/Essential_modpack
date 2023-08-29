@@ -5,11 +5,17 @@
 	"name": "Essentials",
 	"developer": "TQMatvey",
 	"description": "",
+	"early-load": true,
 	"settings": {
         "no-transitions": {
             "name": "Disable Transitions",
             "type": "bool",
             "default": false
+    	},
+		"unlock-all-icons": {
+            "name": "Unlock All Icons",
+            "type": "bool",
+            "default": true
     	}
 	}
 }
