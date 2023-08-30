@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.3.0)
+cmake_minimum_required(VERSION 3.5.1)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-project(Test VERSION 1.0.0)
+project(Essential_Modpack VERSION 1.0.0)
 
 # Use GLOB_RECURSE instead of GLOB
 # to recursively add all source files 
@@ -13,6 +13,8 @@ file(GLOB SOURCES
 
 # Set up the mod binary
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
+
+target_include_directories(Essential_Modpack PRIVATE include)
 
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "Unable to find Geode SDK! Please define GEODE_SDK environment variable to point to Geode")
