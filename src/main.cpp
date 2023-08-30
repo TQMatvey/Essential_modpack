@@ -2,17 +2,16 @@
 
 $on_mod(Loaded) {
 	patchTransitions();
-	patchUnlockAllIcons();
 }
 
 $execute {
+	// from my observatiom. toglling any mod and clicking apply Restarts
+	// the Mod, so $on_mod(Loaded) gets triggered with new values
 	listenForSettingChanges("no-transitions", +[](bool val) {
 		isNoTransitions = val;
-        patchTransitions();
 	});
 
 	listenForSettingChanges("unlock-all-icons", +[](bool val) {
 		UnlockAllIcons = val;
-        patchUnlockAllIcons();
 	});
 }
