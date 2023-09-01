@@ -14,4 +14,8 @@ $execute {
 	listenForSettingChanges("unlock-all-icons", +[](bool val) {
 		UnlockAllIcons = val;
 	});
+
+	listenForSettingChanges("practice-music", +[](bool val) {
+		PracticeMusic = val;
+	});
 }

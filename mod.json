@@ -16,6 +16,11 @@
             "name": "Unlock All Icons",
             "type": "bool",
             "default": true
+    	},
+		"practice-music": {
+            "name": "Practice Music",
+            "type": "bool",
+            "default": true
     	}
 	}
 }
