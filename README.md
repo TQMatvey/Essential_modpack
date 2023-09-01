@@ -1,3 +1,3 @@
-# Test
+# Essentials Modpack
 
-This is where she makes a mod.
+I Suggest checking out about.md for more information
